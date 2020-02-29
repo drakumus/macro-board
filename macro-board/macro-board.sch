@@ -164,17 +164,6 @@ Wire Wire Line
 Wire Wire Line
 	3100 3650 3250 3650
 $Comp
-L Device:C_Small C4
-U 1 1 5E5BFE41
-P 700 2900
-F 0 "C4" H 792 2946 50  0000 L CNN
-F 1 "0.1u" H 792 2855 50  0000 L CNN
-F 2 "" H 700 2900 50  0001 C CNN
-F 3 "~" H 700 2900 50  0001 C CNN
-	1    700  2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C5
 U 1 1 5E5C04E7
 P 1050 2900
@@ -1187,8 +1176,6 @@ F 3 "~" H 7850 3750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 3650 7850 3650
-Wire Wire Line
-	5800 3900 6200 3900
 Connection ~ 6200 3900
 Wire Wire Line
 	6200 3900 6700 3900
@@ -1198,8 +1185,6 @@ Wire Wire Line
 Connection ~ 7200 3900
 Wire Wire Line
 	7200 3900 7700 3900
-Wire Wire Line
-	5800 3250 6200 3250
 Connection ~ 6200 3250
 Wire Wire Line
 	6200 3250 6700 3250
@@ -1209,8 +1194,6 @@ Wire Wire Line
 Connection ~ 7200 3250
 Wire Wire Line
 	7200 3250 7700 3250
-Wire Wire Line
-	5800 2600 6200 2600
 Connection ~ 6200 2600
 Wire Wire Line
 	6200 2600 6700 2600
@@ -1564,4 +1547,112 @@ Wire Wire Line
 	3100 2150 3400 2150
 Connection ~ 6900 1150
 Connection ~ 6400 1150
+Wire Wire Line
+	5750 2600 6200 2600
+Wire Wire Line
+	5750 3250 6200 3250
+Wire Wire Line
+	5750 3900 6200 3900
+$Comp
+L Device:C_Small C7
+U 1 1 5E5CFCB9
+P 6350 5250
+F 0 "C7" H 6442 5296 50  0000 L CNN
+F 1 "0.1u" H 6442 5205 50  0000 L CNN
+F 2 "" H 6350 5250 50  0001 C CNN
+F 3 "~" H 6350 5250 50  0001 C CNN
+	1    6350 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5E5D0257
+P 6650 5250
+F 0 "C8" H 6742 5296 50  0000 L CNN
+F 1 "0.1u" H 6742 5205 50  0000 L CNN
+F 2 "" H 6650 5250 50  0001 C CNN
+F 3 "~" H 6650 5250 50  0001 C CNN
+	1    6650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5E5D0C32
+P 6950 5250
+F 0 "C9" H 7042 5296 50  0000 L CNN
+F 1 "0.1u" H 7042 5205 50  0000 L CNN
+F 2 "" H 6950 5250 50  0001 C CNN
+F 3 "~" H 6950 5250 50  0001 C CNN
+	1    6950 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5E5D0F66
+P 7250 5250
+F 0 "C10" H 7342 5296 50  0000 L CNN
+F 1 "0.1u" H 7342 5205 50  0000 L CNN
+F 2 "" H 7250 5250 50  0001 C CNN
+F 3 "~" H 7250 5250 50  0001 C CNN
+	1    7250 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5E5BFE41
+P 700 2900
+F 0 "C4" H 792 2946 50  0000 L CNN
+F 1 "0.1u" H 792 2855 50  0000 L CNN
+F 2 "" H 700 2900 50  0001 C CNN
+F 3 "~" H 700 2900 50  0001 C CNN
+	1    700  2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E5D1FB9
+P 6200 5350
+F 0 "#PWR?" H 6200 5100 50  0001 C CNN
+F 1 "GND" H 6205 5177 50  0000 C CNN
+F 2 "" H 6200 5350 50  0001 C CNN
+F 3 "" H 6200 5350 50  0001 C CNN
+	1    6200 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E5D24FA
+P 6200 5150
+F 0 "#PWR?" H 6200 5000 50  0001 C CNN
+F 1 "+5V" H 6215 5323 50  0000 C CNN
+F 2 "" H 6200 5150 50  0001 C CNN
+F 3 "" H 6200 5150 50  0001 C CNN
+	1    6200 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6200 5150 6350 5150
+Connection ~ 6350 5150
+Wire Wire Line
+	6350 5150 6650 5150
+Connection ~ 6650 5150
+Wire Wire Line
+	6650 5150 6950 5150
+Connection ~ 6950 5150
+Wire Wire Line
+	6950 5150 7250 5150
+Wire Wire Line
+	7250 5350 6950 5350
+Connection ~ 6350 5350
+Wire Wire Line
+	6350 5350 6200 5350
+Connection ~ 6650 5350
+Wire Wire Line
+	6650 5350 6350 5350
+Connection ~ 6950 5350
+Wire Wire Line
+	6950 5350 6650 5350
+NoConn ~ 1350 6300
+NoConn ~ 1350 5700
+NoConn ~ 4850 6150
 $EndSCHEMATC
