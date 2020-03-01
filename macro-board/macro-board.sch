@@ -19,7 +19,7 @@ U 1 1 5E5B4F3E
 P 2400 2550
 F 0 "U1" H 2400 1061 50  0000 C CNN
 F 1 "ATmega32U2-AU" H 2400 970 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2400 2550 50  0001 C CIN
+F 2 "Housings_DFN_QFN:QFN-32-1EP_5x5mm_Pitch0.5mm" H 2400 2550 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 2400 2550 50  0001 C CNN
 	1    2400 2550
 	1    0    0    -1  
@@ -27,12 +27,12 @@ $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 5E5B6E66
-P 700 1550
-F 0 "C1" V 471 1550 50  0000 C CNN
-F 1 "22p" V 562 1550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 700 1550 50  0001 C CNN
-F 3 "~" H 700 1550 50  0001 C CNN
-	1    700  1550
+P 600 1550
+F 0 "C1" V 371 1550 50  0000 C CNN
+F 1 "22p" V 462 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 600 1550 50  0001 C CNN
+F 3 "~" H 600 1550 50  0001 C CNN
+	1    600  1550
 	0    1    1    0   
 $EndComp
 $Comp
@@ -49,18 +49,12 @@ $EndComp
 Wire Wire Line
 	950  1600 950  1550
 Wire Wire Line
-	950  1550 800  1550
-Wire Wire Line
 	950  1800 950  1900
 Wire Wire Line
-	950  1900 800  1900
-Wire Wire Line
-	600  1900 600  2000
-Wire Wire Line
-	600  2000 800  2000
+	500  1900 500  2000
 Wire Wire Line
 	1050 2000 1050 1700
-Connection ~ 600  1900
+Connection ~ 500  1900
 Wire Wire Line
 	950  1900 1500 1900
 Connection ~ 950  1900
@@ -82,7 +76,6 @@ F 3 "" H 800 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	800  2050 800  2000
-Connection ~ 800  2000
 Wire Wire Line
 	800  2000 1050 2000
 Text GLabel 1100 2050 0    50   Input ~ 0
@@ -241,16 +234,16 @@ Wire Wire Line
 Wire Wire Line
 	1050 2800 1050 2750
 Wire Wire Line
-	600  1900 600  1550
+	500  1900 500  1550
 $Comp
 L Device:C_Small C2
 U 1 1 5E5B7D11
-P 700 1900
-F 0 "C2" V 471 1900 50  0000 C CNN
-F 1 "22p" V 562 1900 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 700 1900 50  0001 C CNN
-F 3 "~" H 700 1900 50  0001 C CNN
-	1    700  1900
+P 600 1900
+F 0 "C2" V 371 1900 50  0000 C CNN
+F 1 "22p" V 462 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 600 1900 50  0001 C CNN
+F 3 "~" H 600 1900 50  0001 C CNN
+	1    600  1900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -266,7 +259,7 @@ L Device:R_Small R2
 U 1 1 5E5C8896
 P 1450 1450
 F 0 "R2" V 1646 1450 50  0000 C CNN
-F 1 "110k" V 1555 1450 50  0000 C CNN
+F 1 "10k" V 1555 1450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 1450 1450 50  0001 C CNN
 F 3 "~" H 1450 1450 50  0001 C CNN
 	1    1450 1450
@@ -1524,7 +1517,7 @@ L Device:R_Small R23
 U 1 1 5E7DEC0A
 P 3500 2150
 F 0 "R23" V 3304 2150 50  0000 C CNN
-F 1 "10k" V 3395 2150 50  0000 C CNN
+F 1 "1k" V 3395 2150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" H 3500 2150 50  0001 C CNN
 F 3 "~" H 3500 2150 50  0001 C CNN
 	1    3500 2150
@@ -1655,4 +1648,31 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 2910 695
 	1    2850 6950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	850  1700 800  1700
+Wire Wire Line
+	700  1900 950  1900
+Wire Wire Line
+	800  1700 800  2000
+Connection ~ 800  2000
+Wire Wire Line
+	500  2000 800  2000
+Wire Wire Line
+	700  1550 950  1550
+Text GLabel 3100 3250 2    50   Input ~ 0
+ROW0
+Text GLabel 3100 3350 2    50   Input ~ 0
+ROW1
+Text GLabel 3100 2050 2    50   Input ~ 0
+ROW2
+Text GLabel 3100 2650 2    50   Input ~ 0
+ROW3
+Text GLabel 3100 1650 2    50   Input ~ 0
+COL3
+Text GLabel 3100 2750 2    50   Input ~ 0
+COL2
+Text GLabel 3100 2550 2    50   Input ~ 0
+COL1
+Text GLabel 3100 2450 2    50   Input ~ 0
+COL0
 $EndSCHEMATC
